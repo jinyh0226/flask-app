@@ -10,8 +10,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
 # 1-1: 데이터 불러오기 및 로그 변환
-fires = pd.read_csv("./sanbul2district-divby100.csv", sep=",")
-fires['burned_area'] = np.log(fires['burned_area'] + 1)
+url = "https://github.com/samkeun/data/raw/refs/heads/main/sanbul2/sanbul2.csv"
+fires = pd.read_csv(url)
 
 # 1-2: 기초 정보 출력
 print(fires.head())
