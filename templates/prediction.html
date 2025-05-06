@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>산불 예측 입력</title>
+</head>
+<body>
+    <h1>2020810072 산불 예측 정보 입력</h1>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      {{ form.longitude.label }} {{ form.longitude() }}<br>
+      {{ form.latitude.label }} {{ form.latitude() }}<br>
+      {{ form.month.label }} {{ form.month() }}<br>
+      {{ form.day.label }} {{ form.day() }}<br>
+      {{ form.avg_temp.label }} {{ form.avg_temp() }}<br>
+      {{ form.max_temp.label }} {{ form.max_temp() }}<br>
+      {{ form.max_wind_speed.label }} {{ form.max_wind_speed() }}<br>
+      {{ form.avg_wind.label }} {{ form.avg_wind() }}<br>
+      {{ form.submit() }}
+    </form>
+</body>
+</html>
